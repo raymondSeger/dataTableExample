@@ -2,11 +2,12 @@ $(document).ready(function() {
 
     var table = $('#example').DataTable({
 
-        "createdRow": function ( row, data, index ) {
+        "footerCallback": function ( row, data, start, end, display ) {
             console.log(row);
             console.log(data);
-            console.log(index);
-            $('td', row).eq(5).addClass('highlight');
+            console.log(start);
+            console.log(end);
+            console.log(display);
         }
 
     });
