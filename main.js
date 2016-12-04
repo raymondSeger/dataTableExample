@@ -3,9 +3,8 @@ $(document).ready(function() {
 
     });
 
-    $('#example tbody').on('click', 'tr', function () {
-        var data = table.row( this ).data();
-        console.log(data);
-    } );
+    table.on( 'order.dt',  function () { console.log( 'Order' ); } );
+    table.on( 'search.dt', function () { console.log( 'Search' ); } );
+    table.on( 'page.dt',   function () { console.log( 'Page' ); } );
 
 } );
