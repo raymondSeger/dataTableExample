@@ -1,5 +1,5 @@
 $(document).ready(function() {
     $('#example').DataTable({
-        stateSave: true
+        "dom": '<"wrapper"flipt>'
     });
 } );
