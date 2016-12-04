@@ -1,12 +1,16 @@
 $(document).ready(function() {
+
+    $.extend( true, $.fn.dataTable.defaults, {
+        "searching": false,
+        "ordering": false
+    } );
+
     var table = $('#example').DataTable({
 
-        "lengthMenu": [
-            [25, 50, -1],
-            [25, 50, "All"]
-        ]
-
     });
+
+
+
 
     table.on( 'order.dt',  function () { console.log( 'Order' ); } );
     table.on( 'search.dt', function () { console.log( 'Search' ); } );
