@@ -1,5 +1,5 @@
 $(document).ready(function() {
     $('#example').DataTable({
-        "scrollY":        "200px"
+        scrollY:        '50vh',
     });
 } );
