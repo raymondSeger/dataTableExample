@@ -2,7 +2,14 @@ $(document).ready(function() {
 
     var table = $('#example').DataTable({
 
-        "dom": '<"toolbar">frtip'
+        "aoColumns": [
+            null,
+            null,
+            { "orderSequence": [ "asc" ] },
+            { "orderSequence": [ "desc", "asc", "asc" ] },
+            { "orderSequence": [ "desc" ] },
+            null
+        ]
 
     });
 
