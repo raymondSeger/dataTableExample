@@ -1,5 +1,15 @@
 $(document).ready(function() {
     $('#example').DataTable({
-        "order": [[ 3, "desc" ]] // sort column #3 which is age (starts at 0 )
+        "columnDefs": [
+            {
+                "targets": [ 0 ],
+                "visible": false,
+                "searchable": false
+            },
+            {
+                "targets": [ 1 ],
+                "visible": false
+            }
+        ]
     });
 } );
