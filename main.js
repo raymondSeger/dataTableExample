@@ -1,5 +1,5 @@
 $(document).ready(function() {
     $('#example').DataTable({
-        "pagingType": "full"
+        "scrollY":        "200px"
     });
 } );
