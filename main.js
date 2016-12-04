@@ -41,15 +41,9 @@ $(document).ready(function() {
 
     var table = $('#example').DataTable({
 
-        data: dataSet,
-        columns: [
-            { title: "Name Name" },
-            { title: "Position" },
-            { title: "Office" },
-            { title: "Extn." },
-            { title: "Start date" },
-            { title: "Salary" }
-        ]
+        "processing": true,
+        "serverSide": true,
+        "ajax": "server.php"
 
     });
 

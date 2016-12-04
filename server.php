@@ -1,5 +1,6 @@
 <?php
-$a = 99;
+require_once "/vendor/autoload.php";
 
-echo $a;
+// see the parameters that DataTables gives
+dump($_GET);
 ?>
